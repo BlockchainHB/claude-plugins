@@ -1,0 +1,19 @@
+{
+  "name": "feature-setup",
+  "description": "Systematically set up new features from planning through implementation structure with proper branching and architecture.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "feature",
+    "planning",
+    "architecture",
+    "git",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "pull-request",
+  "description": "Create well-structured pull requests with comprehensive descriptions, proper labels, and review setup.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "pull-request",
+    "code-review",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}

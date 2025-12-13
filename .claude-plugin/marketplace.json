@@ -8,6 +8,26 @@
       "name": "tailwind-illustrations",
       "source": "./plugins/tailwind-illustrations",
       "description": "Create polished, interactive landing page illustrations with Tailwind CSS"
+    },
+    {
+      "name": "git-commit",
+      "source": "./plugins/git-commit",
+      "description": "Create detailed, well-structured git commits with conventional commit format"
+    },
+    {
+      "name": "pull-request",
+      "source": "./plugins/pull-request",
+      "description": "Create well-structured pull requests with comprehensive descriptions"
+    },
+    {
+      "name": "feature-setup",
+      "source": "./plugins/feature-setup",
+      "description": "Systematically set up new features from planning through implementation"
+    },
+    {
+      "name": "linear-mcp",
+      "source": "./plugins/linear-mcp",
+      "description": "Work with Linear project management via MCP tools"
     }
   ]
 }

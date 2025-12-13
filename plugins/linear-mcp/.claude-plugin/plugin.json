@@ -1,0 +1,19 @@
+{
+  "name": "linear-mcp",
+  "description": "Work with Linear project management via MCP tools. Create issues, update projects, manage initiatives, and query Linear data.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "linear",
+    "mcp",
+    "project-management",
+    "issues",
+    "graphql"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}

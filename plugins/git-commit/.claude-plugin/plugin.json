@@ -1,0 +1,19 @@
+{
+  "name": "git-commit",
+  "description": "Create detailed, well-structured git commits with conventional commit format and comprehensive change documentation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits",
+    "version-control",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}
