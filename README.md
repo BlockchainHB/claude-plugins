@@ -11,7 +11,7 @@
 ### Quick Start
 
 ```
-/plugin marketplace add hasaamb/claude-plugins
+/plugin marketplace add BlockchainHB/claude-plugins
 ```
 
 <br>
@@ -26,7 +26,7 @@
 </table>
 
 ```
-/plugin install tailwind-illustrations@hasaam-plugins
+/plugin install tailwind-illustrations@blockchainhb-plugins
 ```
 
 <sup>→ <a href="./plugins/tailwind-illustrations">View docs</a></sup>
