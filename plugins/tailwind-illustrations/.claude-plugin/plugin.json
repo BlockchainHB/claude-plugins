@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-illustrations",
+  "description": "Create polished, interactive landing page illustrations with Tailwind CSS and React. Build dashboard previews, hero sections with tab-based screenshots, and interactive UI mockups.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "tailwind",
+    "illustrations",
+    "landing-page",
+    "dashboard",
+    "react",
+    "ui-components",
+    "hero-section"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hasaamb/claude-plugins"
+  }
+}

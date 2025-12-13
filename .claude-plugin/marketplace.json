@@ -1,0 +1,13 @@
+{
+  "name": "hasaam-plugins",
+  "owner": {
+    "name": "@hasaamb"
+  },
+  "plugins": [
+    {
+      "name": "tailwind-illustrations",
+      "source": "./plugins/tailwind-illustrations",
+      "description": "Create polished, interactive landing page illustrations with Tailwind CSS"
+    }
+  ]
+}
