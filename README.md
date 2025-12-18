@@ -39,6 +39,10 @@
     <td><strong>linear-mcp</strong></td>
     <td>Work with Linear project management via MCP tools.<br><sub>Issues · Projects · Initiatives · GraphQL</sub></td>
   </tr>
+  <tr>
+    <td><strong>human-writing</strong></td>
+    <td>Write authentic, human-sounding content by avoiding AI writing patterns.<br><sub>Landing pages · Emails · Blogs · Marketing copy</sub></td>
+  </tr>
 </table>
 
 <br>

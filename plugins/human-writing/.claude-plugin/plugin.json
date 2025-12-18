@@ -1,0 +1,22 @@
+{
+  "name": "human-writing",
+  "description": "Write authentic, human-sounding content by avoiding AI writing patterns. Based on Wikipedia's Signs of AI Writing guide.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "writing",
+    "copywriting",
+    "landing-pages",
+    "marketing",
+    "blogs",
+    "emails",
+    "human-voice",
+    "content"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}
