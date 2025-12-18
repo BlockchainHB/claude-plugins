@@ -1,5 +1,5 @@
 <h1>
-  <code>@hasaamb/plugins</code>
+  <code>@blockchainhb/plugins</code>
 </h1>
 
 <p>
