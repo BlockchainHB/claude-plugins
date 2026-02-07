@@ -28,6 +28,26 @@
       "name": "linear-mcp",
       "source": "./plugins/linear-mcp",
       "description": "Work with Linear project management via MCP tools"
+    },
+    {
+      "name": "x-list-extraction",
+      "source": "./plugins/x-list-extraction",
+      "description": "Extract tweets from X Pro (TweetDeck) lists via GraphQL API and DOM scraping"
+    },
+    {
+      "name": "x-reply-posting",
+      "source": "./plugins/x-reply-posting",
+      "description": "Post replies to tweets on X (Twitter) via Chrome browser automation"
+    },
+    {
+      "name": "linkedin-connect-api",
+      "source": "./plugins/linkedin-connect-api",
+      "description": "Send LinkedIn connection requests via the internal Voyager API"
+    },
+    {
+      "name": "linkedin-reply-api",
+      "source": "./plugins/linkedin-reply-api",
+      "description": "Post comments on LinkedIn posts via the internal Voyager API"
     }
   ]
 }

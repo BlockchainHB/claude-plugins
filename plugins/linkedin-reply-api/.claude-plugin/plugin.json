@@ -1,0 +1,22 @@
+{
+  "name": "linkedin-reply-api",
+  "description": "Post comments on LinkedIn posts via the internal Voyager API. No browser navigation needed -- just execute JavaScript on any linkedin.com page through Chrome browser automation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "linkedin",
+    "comments",
+    "voyager-api",
+    "engagement",
+    "chrome",
+    "browser-automation",
+    "social-media",
+    "posting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}

@@ -43,6 +43,22 @@
     <td><strong>human-writing</strong></td>
     <td>Write authentic, human-sounding content by avoiding AI writing patterns.<br><sub>Landing pages · Emails · Blogs · Marketing copy</sub></td>
   </tr>
+  <tr>
+    <td><strong>x-list-extraction</strong></td>
+    <td>Extract tweets from X Pro (TweetDeck) lists via GraphQL API and DOM scraping.<br><sub>Chrome automation · GraphQL · Tweet data · Engagement metrics</sub></td>
+  </tr>
+  <tr>
+    <td><strong>x-reply-posting</strong></td>
+    <td>Post replies to tweets on X (Twitter) via Chrome browser automation.<br><sub>Chrome automation · Reply box · Keyboard submit · Verification</sub></td>
+  </tr>
+  <tr>
+    <td><strong>linkedin-connect-api</strong></td>
+    <td>Send LinkedIn connection requests via the internal Voyager API.<br><sub>Chrome automation · Voyager API · Batch requests · Rate limits</sub></td>
+  </tr>
+  <tr>
+    <td><strong>linkedin-reply-api</strong></td>
+    <td>Post comments on LinkedIn posts via the internal Voyager API.<br><sub>Chrome automation · Voyager API · Comments · Activity URNs</sub></td>
+  </tr>
 </table>
 
 <br>

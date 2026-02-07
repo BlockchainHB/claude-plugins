@@ -1,0 +1,22 @@
+{
+  "name": "x-reply-posting",
+  "description": "Post replies to tweets on X (Twitter) via Chrome browser automation. Handles textarea activation, text insertion, keyboard submission, and verification using the inline reply box.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "x",
+    "twitter",
+    "reply",
+    "posting",
+    "chrome",
+    "browser-automation",
+    "social-media",
+    "engagement"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}

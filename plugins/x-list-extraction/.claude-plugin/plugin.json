@@ -1,0 +1,24 @@
+{
+  "name": "x-list-extraction",
+  "description": "Extract tweets from X Pro (TweetDeck) lists via GraphQL API and DOM scraping. Returns structured tweet data with full text, engagement metrics, author info, and direct URLs using Chrome browser automation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "x",
+    "twitter",
+    "tweetdeck",
+    "x-pro",
+    "scraping",
+    "graphql",
+    "chrome",
+    "browser-automation",
+    "tweets",
+    "social-media"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockchainHB/claude-plugins"
+  }
+}
