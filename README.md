@@ -4,7 +4,7 @@
 
 **Battle-tested Claude Code plugins for real workflows — git, social APIs, project management, and research.**
 
-[![Skills](https://www.skills.sh/b/BlockchainHB/claude-plugins)](https://skills.sh/BlockchainHB/claude-plugins)
+[![skills.sh](https://img.shields.io/badge/skills.sh-install-black.svg)](https://skills.sh/BlockchainHB/claude-plugins)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](./LICENSE)
 [![Plugins](https://img.shields.io/badge/plugins-11-blue.svg)](#whats-inside)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-marketplace-d97757.svg)](https://code.claude.com/docs/en/plugins)
@@ -74,19 +74,6 @@ Works with Claude Code, Cursor, Codex, and ~70 other agents. Installs just the s
 ```
 npx skills add BlockchainHB/claude-plugins
 ```
-
-<br>
-
-## Quality
-
-Every release passes:
-
-```
-claude plugin validate .                  # marketplace manifest
-claude plugin validate ./plugins/<name>   # each plugin
-```
-
-…and is verified discoverable by `npx skills add`.
 
 <br>
 
