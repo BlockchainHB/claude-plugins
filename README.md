@@ -59,6 +59,10 @@
     <td><strong>linkedin-reply-api</strong></td>
     <td>Post comments on LinkedIn posts via the internal Voyager API.<br><sub>Chrome automation · Voyager API · Comments · Activity URNs</sub></td>
   </tr>
+  <tr>
+    <td><strong>giggster-search</strong></td>
+    <td>Search Giggster event/venue rentals via their internal API.<br><sub>Availability · House rules · Capacity · Budget · Overnight hours</sub></td>
+  </tr>
 </table>
 
 <br>
@@ -70,6 +74,16 @@
 ```
 
 <sup>→ View docs in each plugin's [README](./plugins)</sup>
+
+<br>
+
+### Install Skills Only (skills.sh)
+
+Works with any agent supported by [skills.sh](https://skills.sh) (Claude Code, Cursor, Codex, and ~70 others). Installs just the skills — plugin commands/hooks/MCP servers require the plugin install above.
+
+```
+npx skills add BlockchainHB/claude-plugins
+```
 
 <br>
 <br>

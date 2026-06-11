@@ -1,3 +1,8 @@
+---
+name: tailwind-illustrations
+description: Create polished, interactive landing page illustrations with Tailwind CSS and React. Use when building dashboard previews, hero sections with tab-based screenshots, or interactive UI mockups that showcase SaaS products on landing pages.
+---
+
 # Tailwind UI Illustrations
 
 Create polished, interactive landing page illustrations using Tailwind CSS and React. Build dashboard previews, hero sections with tab-based screenshots, and interactive UI mockups that showcase SaaS products.

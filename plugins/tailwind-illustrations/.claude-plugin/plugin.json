@@ -14,8 +14,5 @@
     "ui-components",
     "hero-section"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlockchainHB/claude-plugins"
-  }
+  "repository": "https://github.com/BlockchainHB/claude-plugins"
 }

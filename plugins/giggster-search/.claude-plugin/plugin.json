@@ -1,0 +1,20 @@
+{
+  "name": "giggster-search",
+  "description": "Search Giggster event/venue rentals via their internal API instead of clicking through the website. Filters by date availability, house rules (alcohol, loud noise, smoking), capacity, budget, and overnight operating hours, then produces a shortlist.",
+  "version": "1.0.0",
+  "author": {
+    "name": "@hasaamb"
+  },
+  "keywords": [
+    "giggster",
+    "venues",
+    "event-space",
+    "party",
+    "rentals",
+    "api",
+    "scraping",
+    "shortlist",
+    "events"
+  ],
+  "repository": "https://github.com/BlockchainHB/claude-plugins"
+}

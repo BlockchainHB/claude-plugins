@@ -3,6 +3,7 @@
   "owner": {
     "name": "@hasaamb"
   },
+  "description": "Claude Code plugins for workflow automation: git/PR workflows, social media APIs (X, LinkedIn), Linear, venue search, and content tools",
   "plugins": [
     {
       "name": "tailwind-illustrations",
@@ -48,6 +49,16 @@
       "name": "linkedin-reply-api",
       "source": "./plugins/linkedin-reply-api",
       "description": "Post comments on LinkedIn posts via the internal Voyager API"
+    },
+    {
+      "name": "human-writing",
+      "source": "./plugins/human-writing",
+      "description": "Write authentic, human-sounding content by avoiding AI writing patterns"
+    },
+    {
+      "name": "giggster-search",
+      "source": "./plugins/giggster-search",
+      "description": "Search Giggster event/venue rentals via their internal API \u2014 filter by availability, rules, capacity, budget, and overnight hours"
     }
   ]
 }
