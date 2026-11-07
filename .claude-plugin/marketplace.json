@@ -13,12 +13,12 @@
     {
       "name": "git-commit",
       "source": "./plugins/git-commit",
-      "description": "Create detailed, well-structured git commits with conventional commit format"
+      "description": "Write git commits in Conventional Commits format with 50/72 formatting and a why-focused body"
     },
     {
       "name": "pull-request",
       "source": "./plugins/pull-request",
-      "description": "Create well-structured pull requests with comprehensive descriptions"
+      "description": "Open pull requests with a plain-language title and a problem, change, and verification body"
     },
     {
       "name": "feature-setup",

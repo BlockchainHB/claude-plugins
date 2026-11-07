@@ -1,152 +1,78 @@
 ---
 name: pull-request
-description: Create well-structured pull requests with proper descriptions, labels, and review setup. Use when creating PRs, opening merge requests, or preparing code for review.
+description: Opens a pull request with a plain-language outcome title and a short problem, change, and verification body. Follows the repository's PR template and rules first. Use when creating a PR, opening a merge request, or preparing a branch for review.
 ---
 
-# Pull Request Helper
+# Pull request
 
-Create professional pull requests with comprehensive descriptions and proper setup.
+## 1. Find the rules
 
-## When to Use
+Read `.github/pull_request_template.md`, the PR section of `AGENTS.md` or `CLAUDE.md`, and `CONTRIBUTING.md`. If the repository has a template, keep its headings and their order, and apply the guidance below inside them.
 
-- Creating a new pull request
-- Opening a merge request
-- Preparing code for review
-
-## Workflow
-
-### 1. Prepare Branch
+## 2. Prepare the branch
 
 ```bash
-# Ensure all changes are committed
 git status
-
-# Push branch to remote
-git push -u origin branch-name
-
-# Check if up to date with main
 git fetch origin main
 git log origin/main..HEAD --oneline
+git diff origin/main...HEAD --stat
+git push -u origin "$(git branch --show-current)"
 ```
 
-### 2. Gather Context
+- Commit any uncommitted changes first.
+- Read every commit on the branch, not only the latest.
+- Keep what you observed apart from what you infer. Never say a test or check passed unless it ran on this head.
+
+## 3. Title
+
+Write `type(scope): plain-language outcome`. State the behavior after the merge, as a changelog reader would see it. Keep it to 72 characters.
+
+- fix: say what no longer goes wrong. "fix(web): new threads no longer spike CPU"
+- perf: give the number only if you measured it on this change. Otherwise state the effect. "perf(server): background launcher uses 75% less memory"
+- feat: say what the user can now do. "feat(tasks): tasks link to their thread"
+
+## 4. Body
+
+For a small PR with one behavior change, write two or three paragraphs and no headings: the problem, then what the system does now, then the proof.
+
+For a larger PR, use these sections, in this order. Leave out a section that would be empty.
+
+- **Problem**: What was wrong, and for whom, in one to three sentences. Give the real case and its numbers if you have them.
+- **Change**: What the system does now, as behavior. Give one bullet to each component that changed. End with **Not changed:** and the nearby things a reviewer could think you touched.
+- **Risk**: Write this section only if a risk exists. Give the failure mode, who it affects, and how to roll back.
+- **Verification**: Give the exact commands and checks you ran, and what you saw. Name the test that fails on the base branch. Say what you did not run, and why. Label each number as **Measured** or **Modeled, not measured**.
+- **Related**: `Closes #123`, and linked PRs, each with one line on how it relates.
+
+For UI changes, put before and after screenshots in a two-column table. For motion or timing, add a short recording. Upload them to GitHub. Never commit them.
+
+Do not add a file-by-file list, line counts, a test-plan checklist, or a summary that repeats the sections. The Files tab already shows the files.
+
+Write short sentences with one fact each. Use active voice and no semicolons. Put code names in code font.
+
+## 5. Create the PR
+
+Write the body to a temp file, then:
 
 ```bash
-# View all commits in this branch
-git log main..HEAD --oneline
-
-# View complete diff from main
-git diff main...HEAD
-
-# Get stats
-git diff main...HEAD --stat
+gh pr create --title "<title>" --body-file <body-file>
 ```
 
-### 3. Write PR Description
+Add labels or reviewers only if the repository uses them: `gh pr edit --add-label <label>`, `gh pr edit --add-reviewer <user>`.
 
-Structure your PR description clearly:
+## Example
 
 ```markdown
-## Summary
+Title: fix(web): tagging a thread by drag no longer scrolls the sidebar
 
-Brief overview of what this PR does and why.
+Dragging a thread from the sidebar into the composer scrolled the
+sidebar, often to the bottom. The drag crossed the autoscroll edge zone
+while it was still a reorder drag.
 
-- Key change 1
-- Key change 2
-- Key change 3
+The sidebar now saves its scroll position when a drag starts. It puts
+that position back when the drag leaves the list, and again on drop.
+Reordering inside the list still autoscrolls.
 
-## Changes
-
-### Feature/Component Name
-- Specific implementation detail
-- Another detail
-
-### Files Modified
-- `path/to/file.ts` - What changed
-- `path/to/new-file.ts` - New file purpose
-
-## Breaking Changes
-
-List any breaking changes, or "None" if backwards compatible.
-
-## Screenshots
-
-Include screenshots for UI changes.
-
-## Test Plan
-
-- [ ] Unit tests pass
-- [ ] Manual testing completed
-- [ ] Edge cases verified
-
-## Related Issues
-
-Closes #123
-Related: #456
+Verification: a slow drag in the dev app with 500 threads. Measured
+sidebar `scrollTop` over the composer: 217px before, 0 after. No
+automated test: no harness renders the full sidebar with a long list.
 ```
-
-### 4. Create PR with GitHub CLI
-
-```bash
-gh pr create \
-  --title "feat(scope): description" \
-  --body "$(cat <<'EOF'
-## Summary
-
-Brief description of changes.
-
-- Change 1
-- Change 2
-
-## Test Plan
-
-- [ ] Tests pass
-- [ ] Manual verification complete
-
-Closes #123
-EOF
-)"
-```
-
-### 5. Set Up PR
-
-After creation:
-
-```bash
-# Add labels
-gh pr edit --add-label "feature,needs-review"
-
-# Request reviewers
-gh pr edit --add-reviewer username
-
-# Link to project
-gh pr edit --add-project "Project Name"
-```
-
-## PR Title Format
-
-Follow conventional commit format:
-
-| Type | Example |
-|------|---------|
-| Feature | `feat(auth): add OAuth2 login` |
-| Bug fix | `fix(api): handle null response` |
-| Refactor | `refactor(db): optimize queries` |
-| Docs | `docs(readme): update installation` |
-
-## Best Practices
-
-- **Cover all commits**: Review every commit, not just the latest
-- **Explain motivation**: Why this change, not just what
-- **Link issues**: Connect to related tickets
-- **Add context**: Screenshots, examples, migration steps
-- **Keep focused**: One feature/fix per PR
-
-## Checklist Before Creating
-
-- [ ] All commits are meaningful
-- [ ] Branch is up to date with main
-- [ ] Tests pass locally
-- [ ] No debug code or console.logs
-- [ ] Documentation updated if needed
-- [ ] Breaking changes documented

@@ -1,7 +1,7 @@
 {
   "name": "git-commit",
-  "description": "Create detailed, well-structured git commits with conventional commit format and comprehensive change documentation.",
-  "version": "1.0.0",
+  "description": "Write git commits in Conventional Commits format with 50/72 formatting, a why-focused body, and a message checker.",
+  "version": "2.0.0",
   "author": {
     "name": "@hasaamb"
   },
