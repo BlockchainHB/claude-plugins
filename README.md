@@ -29,8 +29,8 @@ Every plugin ships a skill that Claude auto-triggers when relevant — no memori
 
 | Plugin | What it does |
 |:-------|:-------------|
-| **[git-commit](./plugins/git-commit)** | Detailed, well-structured commits in conventional format. <br><sub>`conventional commits` `safety checks` `detailed messages`</sub> |
-| **[pull-request](./plugins/pull-request)** | PRs with comprehensive descriptions, labels, and review setup. <br><sub>`PR templates` `labels` `review setup`</sub> |
+| **[git-commit](./plugins/git-commit)** | Conventional commits with 50/72 formatting and a why-focused body. <br><sub>`conventional commits` `safety checks` `message checker`</sub> |
+| **[pull-request](./plugins/pull-request)** | PRs with a plain-language title and a problem, change, and verification body. <br><sub>`plain language` `evidence` `repo templates`</sub> |
 | **[feature-setup](./plugins/feature-setup)** | New features set up systematically, from planning to implementation. <br><sub>`requirements` `branching` `architecture`</sub> |
 | **[linear-mcp](./plugins/linear-mcp)** | Linear project management via MCP tools. <br><sub>`issues` `projects` `initiatives` `GraphQL`</sub> |
 

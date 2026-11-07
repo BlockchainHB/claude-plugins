@@ -1,15 +1,17 @@
 # Pull Request Helper
 
-Create well-structured pull requests with comprehensive descriptions and proper setup.
+Open pull requests that reviewers can read in a minute.
 
 ## What It Does
 
-Claude automatically uses this skill when creating PRs. Creates professional pull requests with:
+Claude uses this skill when it creates a PR. Each PR gets:
 
-- **Clear summaries** — What changed, why, and impact
-- **Complete context** — All commits reviewed, not just the latest
-- **Proper setup** — Labels, reviewers, linked issues
-- **Test plans** — Verification checklists
+- **An outcome title**: `type(scope): plain-language outcome`, such as `fix(web): new threads no longer spike CPU`
+- **A short body**: the problem, what the system does now, what did not change, and the risk
+- **Honest evidence**: the checks that ran and what they showed, what did not run, and measured numbers kept apart from estimates
+- **Your rules first**: it fills your repository's PR template when one exists
+
+It leaves out file lists and test-plan checklists. The Files tab already shows the files.
 
 ## Usage
 
@@ -17,7 +19,7 @@ Claude automatically uses this skill when creating PRs. Creates professional pul
 "Open a pull request"
 "Prepare this for review"
 
-Claude will gather context from all commits, write a comprehensive description, and create the PR with proper metadata.
+Claude reads every commit on the branch, writes the title and body, and creates the PR.
 
 ## Author
 
