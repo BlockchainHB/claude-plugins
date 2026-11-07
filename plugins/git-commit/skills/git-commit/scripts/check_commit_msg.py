@@ -17,7 +17,8 @@ if "--types" in args:
     del args[i : i + 2]
 if len(args) != 1:
     sys.exit(__doc__)
-SUBJECT_RE = re.compile(rf"^({TYPES})(\([a-z0-9._/-]+\))?!?: \S")
+# A scope is any text without parentheses or spaces, such as api, API or @app/core.
+SUBJECT_RE = re.compile(rf"^({TYPES})(\([^()\s]+\))?!?: \S")
 
 lines = open(args[0], encoding="utf-8").read().rstrip("\n").split("\n")
 problems = []
